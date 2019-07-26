@@ -1,27 +1,7 @@
-<!DOCTYPE html>
-<!--
-Created using JS Bin
-http://jsbin.com
-
-Copyright (c) 2019 by anonymous (http://jsbin.com/roxigugawi/1/edit)
-
-Released under the MIT license: http://jsbin.mit-license.org
--->
-<meta name="robots" content="noindex">
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
-</head>
-<body>
-  <div style="text-align: center; font-weight: bold; font-size: 24px; margin-top: 50px"> THIS IS THE TEST PAGE OF JUAN MARCOS jsbin-javascript</div>
-<script id="jsbin-javascript">
 let str1 = "Hello world";
 let str2 = "my name is";
 let str3 = "Juan Marcos";
 console.log(`${str1}, ${str2} ${str3}`);
-
 console.log("--------------------------");
 
 function hola(param1) {
@@ -72,9 +52,6 @@ function recorrer() {
 
 recorrer();
 
-let miArray = [1, 2, 3, -8, 7, 78, 24];
-console.log(miArray);
-
 function divisibles() {
   let contador = 0;
   for (let i=0 ; i<miArray.length ; i++){
@@ -86,7 +63,3 @@ function divisibles() {
 };
 
 console.log(`Resultado: ${divisibles()} que son divisbles`);
-
-</script>
-</body>
-</html>
