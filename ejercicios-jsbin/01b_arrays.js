@@ -7,7 +7,8 @@ console.log("--------------------------");
 function hola(param1) {
   let str1 = "Hello world";
   let str2 = "my name is";
-  return(`${str1}, ${str2} ${param1}`);
+  console.log(`${str1}, ${str2} ${param1}`);
+  document.getElementById("01b_arrays").innerHTML =  `${str1}, ${str2} ${param1}`;
 };
 
 function concatenar(a, b) {
@@ -62,4 +63,4 @@ function divisibles() {
   return contador;
 };
 
-console.log(`Resultado: ${divisibles()} que son divisbles`);
+console.log(`Resultado: ${divisibles()} que son divisbles`); 
