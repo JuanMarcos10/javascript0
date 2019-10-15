@@ -1,3 +1,8 @@
+let arrowFunction = () => 'It is not so dificult';
+console.log(arrowFunction());
+
+
+
 let miDiccionario = {
     clave1: 1,
     clave2: 2
@@ -9,6 +14,7 @@ console.log(miDiccionario);
 for (item in miDiccionario) {
     console.log(miDiccionario[item]);
 }
+console.log("justo aqui debajo es: Object.keys de miDiccionario:");
 console.log(Object.keys(miDiccionario));
 console.log("----------------------------------");
 function getKeys (dict) {
@@ -27,4 +33,4 @@ Object.keys(miDiccionario).forEach(function (item) {
 function object() { 
     console.log(miDiccionario[item]);
     document.getElementById("02_objects").innerHTML =  miDiccionario[item];
-};
+}; 

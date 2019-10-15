@@ -63,4 +63,4 @@ function divisibles() {
   return contador;
 };
 
-console.log(`Resultado: ${divisibles()} que son divisbles`);
+console.log(`Resultado: ${divisibles()} que son divisbles`); 
