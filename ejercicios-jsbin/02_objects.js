@@ -7,7 +7,7 @@ let Pillado = () => {
         } else {
             console.error('Please input pillo =2');
         };
-        console.log('Esto solo es un ejemplo')
+        console.log('Esto solo es un ejemplo si es diferente de 2');
 };
 
 let miDiccionario = {
