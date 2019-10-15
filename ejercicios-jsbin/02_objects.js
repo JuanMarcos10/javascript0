@@ -1,7 +1,5 @@
-let arrowFunction = () => 'It is not so dificult';
-console.log(arrowFunction());
-
-
+let arrowFunction = () => {console.log('It is not so dificult')};
+let Pillado = () => {console.log('Por fin lo pillo')};
 
 let miDiccionario = {
     clave1: 1,
