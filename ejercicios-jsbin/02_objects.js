@@ -1,7 +1,7 @@
 let arrowFunction = () => console.log('It is not so dificult');
 
 let Pillado = () => { 
-    let pillo = 32;
+    let pillo = 2;
         if (pillo === 2) {
         return console.log('Por fin lo pillo')
         } else {
@@ -40,6 +40,7 @@ Object.keys(miDiccionario).forEach(function (item) {
 });
 
 console.log('_________________________');
+
 function object() { 
     console.log(miDiccionario[item]);
     document.getElementById("02_objects").innerHTML =  miDiccionario[item];
