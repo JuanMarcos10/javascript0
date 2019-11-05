@@ -13,15 +13,16 @@ let Pillado = () => {
 let miDiccionario = {
     clave1: 1,
     clave2: 2
-};
-/* console.log(miDiccionario.clave1); */
+}; 
+/*
+console.log(miDiccionario.clave1); 
 miDiccionario.clave3 = 3;
 console.log(miDiccionario);
  
 for (item in miDiccionario) {
     console.log(miDiccionario[item]);
 }
-/*
+
 console.log("justo aqui debajo es: Object.keys de miDiccionario:");
 console.log(Object.keys(miDiccionario));
 console.log("----------------------------------");
@@ -33,15 +34,14 @@ function getKeys (dict) {
         return aux;
 }
 console.log('Mi metodo', getKeys(miDiccionario));
-console.log("----------------------------------"); */
+console.log("----------------------------------"); 
 
 Object.keys(miDiccionario).forEach(function (item) {
     console.log(miDiccionario[item]);
 });
 
 console.log('_________________________');
-
+*/
 function object() { 
-    console.log(miDiccionario[item]);
-    document.getElementById("02_objects").innerHTML =  miDiccionario[item];
+    console.log(miDiccionario);
 };  

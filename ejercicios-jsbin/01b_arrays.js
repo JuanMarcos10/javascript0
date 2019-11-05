@@ -19,10 +19,11 @@ console.log(concatenar("Hello", "World"));
 let arrowfunction = () => "Hola";
 
 console.log(arrowfunction());
-
+/*
 let miArray = [1, 2, 3];
 
 console.log(miArray);
+
 console.log(miArray.length);
 
 miArray.push(4);
@@ -63,4 +64,4 @@ function divisibles() {
   return contador;
 };
 
-console.log(`Resultado: ${divisibles()} que son divisbles`); 
+console.log(`Resultado: ${divisibles()} que son divisbles`);  */
