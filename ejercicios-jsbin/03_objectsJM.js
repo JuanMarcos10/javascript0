@@ -19,9 +19,8 @@ function saludar () {
     console.log(Object.keys(persona));
 }
 
-/*
+
 let object = () => Object.keys(miDiccionario).forEach(function (item) {
     console.log(miDiccionario[item]);
 
 });  
-*/

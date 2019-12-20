@@ -1,4 +1,10 @@
-let str1 = "Hello world";
+
+
+
+
+
+
+/* let str1 = "Hello world";
 let str2 = "my name is";
 let str3 = "Juan Marcos";
 console.log(`${str1}, ${str2} ${str3}`);
@@ -23,9 +29,16 @@ console.log(arrowfunction());
 let miArray = [1, 2, 3];
 
 console.log(miArray);
-
 console.log(miArray.length);
-/*
+let juntar = miArray.join(" - ");
+console.log(juntar);
+let concatenar2 = miArray.concat(juntar);
+console.log(concatenar2);
+console.log("----------------");
+let concatenar2AF = () => miArray.concat(juntar);
+console.log(concatenar2AF());
+
+
 miArray.push(4);
 console.log(miArray);
 

@@ -1,5 +1,11 @@
-let arrowFunction = () => console.log('It is not so dificult');
 
+
+
+
+
+
+let arrowFunction = () => console.log('It is not so dificult');
+/*
 let Pillado = () => { 
     let pillo = 2;
         if (pillo === 2) {
@@ -25,7 +31,7 @@ for (item in miDiccionario) {
 console.log("justo aqui debajo es: Object.keys de miDiccionario:");
 console.log(Object.keys(miDiccionario));
 console.log("----------------------------------");
-/*
+
 function getKeys (dict) {
     let aux = [];
         for (let key in dict) {
@@ -35,7 +41,7 @@ function getKeys (dict) {
 }
 console.log('Mi metodo', getKeys(miDiccionario));
 console.log("----------------------------------"); 
-*/
+
 Object.keys(miDiccionario).forEach(function (item) {
     console.log(miDiccionario[item]);
 });
@@ -44,4 +50,4 @@ console.log('_________________________');
 
 function object() { 
     console.log(miDiccionario);
-};  
+};   */
