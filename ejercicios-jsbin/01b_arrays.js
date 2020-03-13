@@ -10,13 +10,11 @@ function hola(param1) {
   console.log(`${str1}, ${str2} ${param1}`);
   document.getElementById("hola1").innerHTML =  `${str1}, ${str2} ${param1}`;
 };
-
 function concatenar(a, b) {
   return console.log(`${a} ${b}`);
 };
 let arrowFunction = () => document.getElementById("arrowfn").innerHTML = "Hola Arrow Function";
 /* console.log(arrowfunction()); */
-
 let miArray = [1, 2, 7];
 console.log(miArray);
 console.log(miArray.length);
@@ -27,36 +25,23 @@ console.log(concatenar2);
 console.log("22222222222222222222");
 let concatenar2AF = () => miArray.concat(juntar);
 console.log(concatenar2AF());
-
-
-/* miArray.push(4);
-console.log(miArray); */
-
 console.log("3333333333333333333");
-
 miArray.pop();
 console.log(miArray);
-
 console.log("44444444444444444444");
-
 let addToArray = (a) => {
   return miArray.push(a);
 };
-
 addToArray(4);
 console.log(miArray);
-
 console.log("555555555555555555555");
-
 function recorrer() {
   for (let i=0 ; i<miArray.length ; i++){
     console.log(`El valor i es: ${i}`);
     console.log(miArray[i]);
   }
 };
-
 recorrer();
-
 function divisibles() {
   let contador = 0;
   for (let i=0 ; i<miArray.length ; i++){
@@ -66,5 +51,5 @@ function divisibles() {
   }  
   return contador;
 };
-
 console.log(`Resultado: ${divisibles()} que son divisbles`);  
+
