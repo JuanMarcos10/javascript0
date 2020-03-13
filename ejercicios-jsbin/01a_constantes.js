@@ -13,4 +13,8 @@
         console.log("Soy " + user + ", tengo " + oDatos.edad + " años y peso " + oDatos.peso + " kg.");
         document.getElementById("01a_constantes").innerHTML = "Soy " + user + ", tengo " + oDatos.edad + " años y peso " + oDatos.peso + " kg.";
     };
-    
+
+
+    function demo123() {
+        document.getElementById("02a_constantes").innerHTML = "Paragraph changed.";
+       }

@@ -1,11 +1,3 @@
-
-
-
-
-
-
-let arrowFunction = () => console.log('It is not so dificult');
-/*
 let Pillado = () => { 
     let pillo = 2;
         if (pillo === 2) {
@@ -50,4 +42,4 @@ console.log('_________________________');
 
 function object() { 
     console.log(miDiccionario);
-};   */
+};  

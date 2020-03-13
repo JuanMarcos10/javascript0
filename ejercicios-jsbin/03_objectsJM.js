@@ -1,4 +1,4 @@
-let persona = {
+let persona1 = {
     nombre : "Juan Marcos",
     apellidos : "Marin",
     id : 01,
@@ -7,7 +7,7 @@ let persona = {
         numero: 5,
         poblacion: "Marbella"
     }
-}
+} 
 
 function saludar () {
     document.getElementById("03_objectsJM").innerHTML = `Hola soy ${persona.nombre} ${persona.apellidos} y vivo en ${persona.direccion.poblacion}`; 
@@ -20,7 +20,7 @@ function saludar () {
 }
 
 
-let object = () => Object.keys(miDiccionario).forEach(function (item) {
+let object2 = () => Object.keys(miDiccionario).forEach(function (item) {
     console.log(miDiccionario[item]);
 
 });  
