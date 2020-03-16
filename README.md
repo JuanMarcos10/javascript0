@@ -1,3 +1,3 @@
 # javascript0
-JavaScript desde d0
+JavaScript desde 0
 Testing JavaScript
