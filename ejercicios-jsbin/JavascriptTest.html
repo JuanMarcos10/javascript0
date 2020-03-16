@@ -4,23 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="01a_constantes.js"></script>
-    <script src="01b_arrays.js"></script>
-    <script src=02_objects.js></script>
+    <link rel="icon" type="image/png" href="favicon.png" sizes="16x16">
+
     <title>Document</title>
 </head>
 <body>
     <br>
     <a href="index.html"><button type="button">Back</button></a>
- <!--    <p id="01a_constantes">Contantes</p>
+    <p>Contantes</p>
     <button type="button" onclick="listarDatos('Pepe')">Constantes</button>
+    <p id="hola1">Quillo</p>
+    <button type="button" onclick="hola('Juan Marcos')">Hola</button>
 
-    <p id="01b_arrays">Arrays</p>
-    <button type="button" onclick="hola('Juan Marcos')">Arrays: hola</button> -->
+    <p>Arrays 01</p>
+    <button type="button" onclick="concatenar('Juan', 'Marcos')">Arrays: hola</button> 
 
-    <p id="02_objects">Objects</p>
-    <button type="button" onclick='arrowFunction()'>Objects</button>
+    <p>Objects: <span></span></p>
+    <button type="button" onclick='object()'>Objects</button>
+    <button type="button" onclick='arrowFunction()'>Arrow</button>
     <button type="button" onclick='Pillado()'>Pillado</button>
+    <p style="margin-left: 10px;" id="arrowfn">Arrow function </p>
 
+    <p id="04_test">Tests</p>
+    <button type="button" onclick='test1(2, 5)'>Test1</button>
+    <button type="button" onclick='cleartest1()'>Clear Test1</button>
+    <p>Resultado Test 1: <span style="font-weight: bold;" id="test1"></span> </p>
+
+    <button type="button" onclick='test2()'>Test2</button> 
+    <p>Resultado Test 2: <span style="font-weight: bold;" id="test2"></span> </p>
+
+    <button type="button" onclick='test3(6, 5)'>Test3</button>
+    <p>Resultado Test 3: <span style="font-weight: bold;" id="test3"></span> </p>
+
+    <button type="button" onclick='test4(1, 2)'>Test4</button> 
+    <p>Resultado Test 4: <span style="font-weight: bold;" id="test4"></span> </p>
+
+    <button type="button" onclick='consoleclear()'>Clear the console</button>
+
+    <script src="01a_constantes.js"></script>
+<!--     <script src="01b_arrays.js"></script> -->
+    <script src=02_objects.js></script> 
+<!--     <script src="03_objectsJM.js"></script> -->
+    <script src="04_test.js"></script>
 </body>
 </html>

@@ -1,21 +1,19 @@
-let arrowFunction = () => {console.log('It is not so dificult')};
-let Pillado = () => {console.log('Por fin lo pillo')};
+let Pillado = () => { return console.log('Por fin lo pillo') };
 
 let miDiccionario = {
     clave1: 1,
-    clave2: 2
-};
-console.log(miDiccionario.clave1);
-miDiccionario.clave3 = 3;
-console.log(miDiccionario);
-
+    clave2: 2,
+    clave3: 3,
+}; 
+ 
 for (item in miDiccionario) {
     console.log(miDiccionario[item]);
 }
+
 console.log("justo aqui debajo es: Object.keys de miDiccionario:");
 console.log(Object.keys(miDiccionario));
 console.log("----------------------------------");
-function getKeys (dict) {
+/* function getKeys (dict) {
     let aux = [];
         for (let key in dict) {
             aux.push(key);
@@ -23,12 +21,14 @@ function getKeys (dict) {
         return aux;
 }
 console.log('Mi metodo', getKeys(miDiccionario));
-console.log("----------------------------------");
+console.log("----------------------------------");  */
 
 Object.keys(miDiccionario).forEach(function (item) {
     console.log(miDiccionario[item]);
 });
+/* Object.keys(miDiccionario).forEach((item) => console.log(miDiccionario[item])); */
+console.log('_________________________');
+
 function object() { 
-    console.log(miDiccionario[item]);
-    document.getElementById("02_objects").innerHTML =  miDiccionario[item];
-}; 
+    console.log(miDiccionario);
+};  
