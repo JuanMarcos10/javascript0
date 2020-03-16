@@ -12,8 +12,15 @@
     <a href="//127.0.0.1:8080/05.html"><button>Click for reload</button> </a>
     <p>Objects JM examples: <span></span></p>
 
-    <button type="button" onclick='juntos()'>Jugar a piedra - papel - tijeras</button>
-    <p id="juntoshtml"></p>
+    <button type="button" onclick='juegos()'>Jugar a piedra - papel - tijeras</button>
+    <p>Hay restricciones en el programa, hay que introducir en el prompt piedra, papel o tijeras, exacto, si hay espacio, sale ganando el jugador 2! --> Falta corregir</p>
+    <p id="juegohtml"></p>
+
+    <button type="button" onclick='juegoAuto()'>Jugar a piedra - papel - tijeras automatico</button>
+    <p id="juegoAutohtml"></p>
+
+    <button type="button" onclick='juegoAutotruc()' disabled>Jugar a piedra - papel - tijeras automatico Trucado</button>
+    <p id="juegoAutohtml"></p>
 
     <button type="button" onclick='(sum(rango(0, 5, 1)))'>Clic hacer la function rango con la de sumar</button>
     <p id="rangohtml"></p>

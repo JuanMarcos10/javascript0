@@ -1,19 +1,34 @@
-const junto = (player1, player2) => {
+const juego = (player1, player2) => {
     const rules = {piedra: 'tijeras', papel: 'piedra', tijeras: 'papel'};
     if (player1 == player2) {
-        return document.getElementById('juntoshtml').innerHTML = `Jugador 1: ${player1} <br> Jugador 2: ${player2} <br> Resultado: EMPATE`;
+        return document.getElementById('juegohtml').innerHTML = `Jugador 1: ${player1} <br> Jugador 2: ${player2} <br> Resultado: EMPATE`;
     } else if (rules[player1] == player2) {
-        return document.getElementById('juntoshtml').innerHTML = `Jugador 1: ${player1} <br> Jugador 2: ${player2} <br> Resultado: Gana el Jugador 1`;
+        return document.getElementById('juegohtml').innerHTML = `Jugador 1: ${player1} <br> Jugador 2: ${player2} <br> Resultado: Gana el Jugador 1`;
     } else {
-    return document.getElementById('juntoshtml').innerHTML =  `Jugador 1: ${player1} <br> Jugador 2: ${player2} <br> Resultado: Gana el Jugador 2`;
+    return document.getElementById('juegohtml').innerHTML =  `Jugador 1: ${player1} <br> Jugador 2: ${player2} <br> Resultado: Gana el Jugador 2`;
     };
 };
-const juntos = () => { 
+const juegos = () => { 
     let dato1 = prompt ("Jugador numero 1: Introduce piedra, papel o tijeras");
     let dato2 = prompt ("Jugador numero 2: Introduce piedra, papel o tijeras");
-    console.log(junto(dato1, dato2));
-    junto(dato1, dato2) 
+    console.log(juego(dato1, dato2));
+    juego(dato1, dato2) 
 };  
+
+function Player (nombre) {
+    let actions = ['piedra', 'papel', 'tijeras'];
+    this.nombre = nombre;
+    this.play = function () {
+        return actions[Math.floor(Math.random()*actions.length)];
+    }
+};
+
+function juegoAuto () {
+    let player1 = new Player('Jugador 1');
+    let player2 = new Player('Jugador 2');
+    juego (player1.play(), player2.play());
+    
+}
 
 function rango (inicio, fin, rango = 1) {   
     let myArray = [];
