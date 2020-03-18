@@ -5,28 +5,81 @@
   <meta name="viewport" content="width=device-width">
   <title>JavaScript desde 0</title>
   <link rel="icon" type="image/png" href="favicon.png" sizes="16x16">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: auto;
+      width: 60%;
+      padding: 10px;
+      max-width: 600px;
+    }
+
+    #result {
+      background-color: aquamarine;
+      font-weight: 600;
+    }
+
+    div {
+      margin: auto;
+      width: 60%;
+      padding: 10px;
+      max-width: 600px;
+    }
+    .cuadros {
+      border: 1px solid #1C6EA4;
+      margin: auto;
+      margin-bottom: 10px;
+      width: 60%;
+      padding: 10px;
+      max-width: 600px;
+    }
+
+    form {
+      border: 1px solid #1C6EA4;
+      margin: auto;
+      width: 60%;
+      padding: 10px;
+      max-width: 600px;
+    }
+
+  </style>
 </head>
 <body>
     <br>
+    <div>
     <a href="index.html"><button type="button">Back</button></a> 
-    <a href="//127.0.0.1:8080/05.html"><button>Click for reload</button> </a>
-    <p>Objects JM examples: <span></span></p>
+    <a href="//127.0.0.1:8080/05.html"><button>Click for reload</button></a>
+    <p>JUEGO DE PIEDRA, PAPEL, TIJERAS<span></span></p>
+  </div>
+    <div class="cuadros"><span style="margin-right: 20px;">Con 2 jugadores</span><button type="button" onclick='juegos()'>JUGAR</button></div>
+    
+    <div class="cuadros""><span style="margin-right: 20px;">Automatico</span><button type="button" onclick='juegoAuto()'>JUGAR</button></div>
+ 
+    <div class="cuadros"><span style="margin-right: 20px;">Automatico Trucado</span><button type="button" onclick='juegoAutoTruc()'>JUGAR</button></div>
 
-    <button type="button" onclick='juegos()'>Jugar a piedra - papel - tijeras</button>
-    <p>Hay restricciones en el programa, hay que introducir en el prompt piedra, papel o tijeras, exacto, si hay espacio, sale ganando el jugador 2! --> Falta corregir</p>
-    <p id="juegohtml"></p>
+    <form name="form" id="form" action="" style="margin-bottom: 10px;" method="get">
+      <p>Elige como Jugador 1 y pulsa Jugar contra el ordenador que es el jugador 2:</p> 
 
-    <button type="button" onclick='juegoAuto()'>Jugar a piedra - papel - tijeras automatico</button>
-    <p id="juegoAutohtml"></p>
+      <input type="radio" id="radio" name="radiohtml" value="piedra">
+      <label for="piedra">piedra</label><br>
 
-    <button type="button" onclick='juegoAutotruc()' disabled>Jugar a piedra - papel - tijeras automatico Trucado</button>
-    <p id="juegoAutohtml"></p>
+      <input type="radio" id="radio" name="radiohtml" value="papel">
+      <label for="papel">papel</label><br>
+      
+      <input type="radio" id="radio" name="radiohtml" value="tijeras">
+      <label for="tijeras">tijeras</label><br><br> 
+      
+      <input type="button" value="JUGAR" onclick="juegoAutoRadio()">      
+    </form> 
 
+    <br>
+    <div id="result" class="cuadros" style="margin-bottom: 50px; height: 90px;"><p id="juegohtml">RESULTADOS</p></div>
+
+    <div>
     <button type="button" onclick='(sum(rango(0, 5, 1)))'>Clic hacer la function rango con la de sumar</button>
     <p id="rangohtml"></p>
     <p id="sumhtml"></p>
-
-
+    </div>
 
     <script src=05_Objetos.js></script>
 </body>
