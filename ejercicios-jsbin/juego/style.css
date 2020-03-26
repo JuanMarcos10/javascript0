@@ -23,3 +23,14 @@
     background: white;
 }
 
+.actor {
+    position: absolute;
+}
+
+.coin {
+    background: rgb(240,239,90);
+}
+
+.player {
+    background: rgb(70,70,70);
+}
