@@ -5,6 +5,11 @@ const ARROW_CODES = {
 }
 let arrows = trackKeys(ARROW_CODES);
 
+const gameAudioWin = () => { 
+    let Playwin = new Audio(('/sounds/Cheering.wav'));
+    Playwin.play();
+}
+
 function trackKeys (keyCodes) {
     let pressedKeys = {};
     function handler (event) {
@@ -48,18 +53,26 @@ function runLevel (level, Display, callback) {
     })
 }
 
-function runGame (level, Display) {
-    let levelObject;
-    try {
-        levelObject = new Level(GAME_LEVELS);
-    } catch (error) {
-        return alert(error.message);
+function runGame (levels, Display) {
+    function startLevel(levelNumber) {
+        let levelObject;
+        try {
+            levelObject = new Level(levels[levelNumber]);
+        } catch (error) {
+            return alert(error.message);
+        }
+    
+        runLevel(levelObject, Display, status => {
+            if (status === 'lost') { startLevel(levelNumber);
+            alert("HAS PERDIDO. INTENTALO DE NUEVO"); }
+            else if (levelNumber < levels.length -1) startLevel(levelNumber + 1);
+            else {
+                gameAudioWin();
+                alert ("¡¡¡ ENHORABUENA - HAS GANADO !!!");
+            }
+        });
     }
-
-    runLevel(levelObject, Display, status => {
-        if (status === 'lost') console.log('Has perdido');
-        else {console.log('HAS GANADO')};
-    });
+    startLevel(0);
 }
 
 runGame(GAME_LEVELS, DOMDisplay);
